@@ -1,11 +1,188 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link>
+      <div class="container">
+
+        <!-- inputs---------------- -->
+        <form action="">
+          <label 
+          class="my-label" 
+          for="my-input">
+          Username
+          </label> <br>
+          <input 
+          
+          id="my-input" 
+          type="text" 
+          class="my-input"
+          placeholder="Enter username"
+          >
+      </form>
+<br>
+      <!-- select inputs------------- -->
+        <div class="select">
+          <label class="my-label" for="select-class">Classe</label> <br>
+          <select id="select-class" class="select-class">
+            <option selected value="5th">5th</option>
+            <option value="5th">4th</option>
+            <option value="5th">Terminal ES</option>
+            <option value="5th">Terminal S</option>
+            <option value="5th">Second</option>
+          </select>
+        </div>
+<br>
+        <!-- search bar -------------- -->
+
+        <div class="search">
+          <div class="search-icon">
+            <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M19.1405 19.7457L14.7151 15.2648C17.8159 12.0886 17.9104 6.99 14.9294 3.69697C11.9485 0.403934 6.94908 0.0841182 3.58664 2.97136C0.224204 5.8586 -0.309016 10.9292 2.37686 14.4756C5.06273 18.022 10.0153 18.7868 13.6135 16.2107L18.1252 20.8037C18.4082 21.0722 18.8493 21.0643 19.1229 20.7858C19.3965 20.5073 19.4043 20.0582 19.1405 19.7701V19.7457ZM1.99969 9.33342C1.99969 5.46743 5.1337 2.33342 8.99969 2.33342C12.8657 2.33342 15.9997 5.46743 15.9997 9.33342C15.9997 13.1994 12.8657 16.3334 8.99969 16.3334C5.1337 16.3334 1.99969 13.1994 1.99969 9.33342Z" fill="white"/><path d="M19.1405 19.7457H19.6405V19.5404L19.4963 19.3943L19.1405 19.7457ZM14.7151 15.2648L14.3573 14.9156L14.0143 15.2669L14.3593 15.6162L14.7151 15.2648ZM13.6135 16.2107L13.9702 15.8604L13.6703 15.5551L13.3224 15.8042L13.6135 16.2107ZM18.1252 20.8037L17.7685 21.1541L17.7747 21.1604L17.7811 21.1665L18.1252 20.8037ZM19.1405 19.7701H18.6405V19.9643L18.7717 20.1076L19.1405 19.7701ZM19.4963 19.3943L15.0708 14.9135L14.3593 15.6162L18.7848 20.097L19.4963 19.3943ZM15.0728 15.6141C18.3584 12.2487 18.4582 6.85008 15.3001 3.36142L14.5588 4.03252C17.3626 7.12993 17.2734 11.9286 14.3573 14.9156L15.0728 15.6141ZM15.3001 3.36142C12.138 -0.131807 6.82975 -0.472456 3.26091 2.59202L3.91237 3.3507C7.06841 0.640693 11.759 0.939676 14.5588 4.03252L15.3001 3.36142ZM3.26091 2.59202C-0.303234 5.65246 -0.866159 11.0217 1.97827 14.7774L2.77545 14.1737C0.248127 10.8366 0.751642 6.06474 3.91237 3.3507L3.26091 2.59202ZM1.97827 14.7774C4.82625 18.5379 10.0842 19.3524 13.9045 16.6173L13.3224 15.8042C9.94651 18.2211 5.29921 17.506 2.77545 14.1737L1.97827 14.7774ZM13.2568 16.5611L17.7685 21.1541L18.4819 20.4533L13.9702 15.8604L13.2568 16.5611ZM17.7811 21.1665C18.2622 21.6229 19.0151 21.609 19.4796 21.1362L18.7662 20.4354C18.6836 20.5196 18.5542 20.5216 18.4693 20.441L17.7811 21.1665ZM19.4796 21.1362C19.9397 20.6678 19.9524 19.9165 19.5094 19.4325L18.7717 20.1076C18.8562 20.1999 18.8533 20.3467 18.7662 20.4354L19.4796 21.1362ZM19.6405 19.7701V19.7457H18.6405V19.7701H19.6405ZM2.49969 9.33342C2.49969 5.74357 5.40984 2.83342 8.99969 2.83342V1.83342C4.85756 1.83342 1.49969 5.19128 1.49969 9.33342H2.49969ZM8.99969 2.83342C12.5895 2.83342 15.4997 5.74357 15.4997 9.33342H16.4997C16.4997 5.19128 13.1418 1.83342 8.99969 1.83342V2.83342ZM15.4997 9.33342C15.4997 12.9233 12.5895 15.8334 8.99969 15.8334V16.8334C13.1418 16.8334 16.4997 13.4756 16.4997 9.33342H15.4997ZM8.99969 15.8334C5.40984 15.8334 2.49969 12.9233 2.49969 9.33342H1.49969C1.49969 13.4756 4.85756 16.8334 8.99969 16.8334V15.8334Z" fill="white"/></svg>
+          </div>
+          <input class="search-input" type="text" placeholder="Find what interests you">
+        </div>
+
+<br>
+
+        <!-- inputs------------------ -->
+
+
+        <!-- textarea --------------- -->
+
+        <div class="textarea-section">  
+          <textarea  class="textarea" id="" cols="30" rows="10" ></textarea>
+        </div>
+
+      </div>
+
+
+
+
+      <router-link to="/"></router-link>
     </div>
-    <router-view />
   </div>
 </template>
 
-<style>
+
+<style lang="scss">
+
+/* font-family  added */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.my-label {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.0142658px;
+  color: #282929;
+  margin-bottom: 6px;
+
+}
+
+.my-input {
+  background: #FFFFFF;
+  border: 1px solid #CBCDCD;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 16px 18px;
+  outline: none;
+  transition: .1s;
+    width: 350px;
+  height: 56px;
+
+  &:hover {
+    border: 1px solid #505857;;
+  }
+  &:focus {
+    border: 2px solid #229A87;
+  }
+}
+
+.select-class {
+  
+  appearance: none;
+  outline: none;
+  box-shadow: none;
+  background: #FFFFFF;
+  border: 1px solid #CBCDCD;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 16px 18px;
+  width: 350px;
+  height: 56px;
+  &:hover {
+    border: 1px solid #505857;
+  }
+  &:focus {
+    border: 2px solid #229A87;
+  }
+  &:active {
+    border: 2px solid #229A87;
+  }
+}
+
+.select {
+  position: relative;
+}
+
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 46px;
+  left: 320px;
+  color: #505857;
+}
+
+.search {
+  position: relative;
+}
+
+
+.search-input {
+  background: #229A87;
+  border: 1px solid #CBCDCD;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 16px 40px;
+  outline: none;
+  transition: .1s;
+    width: 350px;
+  height: 56px;
+  color: #FFF;
+  &::placeholder {
+    color: #FFFFFF;
+  }
+}
+
+.search-icon {
+  position: absolute;
+  top: 16px;
+  left: 13px;
+}
+
+.textarea {
+  opacity: 0.2;
+  border: 1px solid #36A593;
+  border-radius: 10px;
+  outline: none;
+
+  &:hover {
+    border: 1px solid #505857;
+    opacity: 1;
+
+  }
+  &:active {
+    border: 2px solid #229A87;
+    opacity: 1;
+    outline:none;
+  }
+
+    &:focus {
+    border: 2px solid #229A87;
+    opacity: 1;
+    outline:none;
+  }
+
+}
+
 </style>
