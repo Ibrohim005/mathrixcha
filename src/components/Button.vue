@@ -1,6 +1,6 @@
 <template>
     <div class="buttons">
-        <button class="btn">normal</button>
+<!--    <button class="btn cursor-pointer ">normal</button>
         <button class="btn btn_secondary">awoi</button>
         <button class="btn btn_revice">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -12,7 +12,7 @@
                 <stop offset="1" stop-color="#4692E8"/>
                 </linearGradient>
                 </defs>
-                </svg>
+            </svg>
             To revise again
         </button>
         <button class="btn btn_checked">
@@ -27,13 +27,14 @@
                 </defs>
             </svg>
             checked
-        </button>
+        </button> -->
     </div>
 </template>
 
 <style lang="scss">
  .btn{
   cursor: pointer;
+  padding: 15px 30px 16px 31px;
   width: 280px;
   height: 50px;
   background: #F9ED35;

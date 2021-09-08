@@ -1,18 +1,17 @@
 <template>
   <div class="home">
     <Header />
-    <Slider />
+    <Button />
   </div>
 </template>
 
 <script>
 import Header from '../components/Header.vue'
-import Slider from '../components/Slider.vue';
+import Button from '../components/Button.vue'
 export default {
   name: "Home",
   components: {
-    Header,
-    Slider
+    Header, Button
   },
 };
 </script>
