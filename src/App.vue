@@ -22,7 +22,7 @@ export default {
   margin: 0;
   padding: 0;
 }
-.button{
+.btn{
   cursor: pointer;
   width: 280px;
   height: 50px;
@@ -108,51 +108,54 @@ export default {
   }
 }
 .label {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: -0.0142658px;
-    color: #282929;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.0142658px;
+  color: #282929;
 }
 .input {
-    background: #FFFFFF;
-    border: 1px solid #CBCDCD;
-    box-sizing: border-box;
-    border-radius: 10px;
-    padding: 16px 18px;
-    outline: none;
-    transition:all 0.3s;
-    width: 350px;
-    height: 56px;
-    margin-top: 6px;
-    &:hover{
-        border: 1px solid #505857;
-    }
-    &:focus{
-        border: 2px solid #229A87;
-    }
+  background: #FFFFFF;
+  border: 1px solid #CBCDCD;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 16px 18px;
+  outline: none;
+  transition:all 0.3s;
+  width: 350px;
+  height: 56px;
+  &:hover{
+      border: 1px solid #505857;
+  }
+  &:focus{
+      border: 2px solid #229A87;
+  }
 }
 .select {
-    outline: none;
-    margin-top: 6px;
-    background: #FFFFFF;
-    border: 1px solid #CBCDCD;
-    box-sizing: border-box;
-    border-radius: 10px;
-    padding: 16px 18px;
-    width: 350px;
-    height: 56px;
-    &:hover {
-        border: 1px solid #505857;
-    }
-    &:focus {
-        border: 2px solid #229A87;
-    }
-    &:active {
-        border: 2px solid #229A87;
-    }
+  outline: none;
+  background: #FFFFFF;
+  border: 1px solid #CBCDCD;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 16px 18px;
+  width: 350px;
+  height: 56px;
+  &_sm{
+    width: 150px;
+    padding: 8px 22px;
+    font-weight: 600;
+  }
+  &:hover {
+      border: 1px solid #505857;
+  }
+  &:focus {
+      border: 2px solid #229A87;
+  }
+  &:active {
+      border: 2px solid #229A87;
+  }
 }
 .select-block {
   position: relative;
@@ -195,7 +198,6 @@ export default {
     line-height: 22px;
     letter-spacing: -0.149625px;
     color: #282929;
-    margin-top: 10px;
     &:hover {
         border: 1px solid #505857;
         opacity: 1;
