@@ -7,7 +7,12 @@
 
     <Button />
     <Input />
-  </div>
+
+    <br><br><br><br><br><br><br><br><br>
+    
+    <Label />
+
+    </div>
 </template>
 
 <script>
@@ -15,10 +20,12 @@ import Header from '../components/Header.vue'
 import Button from '../components/Button.vue'
 import Input from '../components/Input.vue'
 import Entrance from '../components/Entrance.vue'
+import Label from '../components/Label.vue'
+
 export default {
   name: "Home",
   components: {
-    Header, Button, Input, Entrance
+    Header, Button, Input, Entrance, Label
   },
 };
 </script>
