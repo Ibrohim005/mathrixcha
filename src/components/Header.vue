@@ -75,14 +75,14 @@
                     </div>
                     <input class="search__input h-10" type="text" placeholder="Find what interests you">
                 </div>
-                <select class="select h-10 select_sm mx-3">
+                <select class="select select_sm h-10 select_sm mx-3">
                     <option value="5th">5th</option> 
                     <option value="4th">4th</option>
                     <option value="terminal es">Terminal ES</option>
                     <option selected value="terminal s">Terminal S</option>
                     <option value="second">Second</option>
                 </select>
-                <button class="btn btn_secondary w-37 h-10">Log In</button>
+                <button class="btn  btn_secondary w-37 h-10">Log In</button>
             </div>
         </div>
     </div>
@@ -104,53 +104,7 @@ export default {
             z-index: -1;
             width: 100%;
         }
-        .select {
-        outline: none;
-        margin-top: 6px;
-        background: #FFFFFF;
-        border: 1px solid #CBCDCD;
-        box-sizing: border-box;
-        border-radius: 10px;
-        padding: 16px 18px;
-        width: 350px;
-        height: 56px;
-        &:hover {
-            border: 1px solid #505857;
-        }
-        &:focus {
-            border: 2px solid #229A87;
-        }
-        &:active {
-            border: 2px solid #229A87;
-        }
-    }
-    .select-block {
-    position: relative;
-    }
-    .search {
-        position: relative;
-        display: flex;
-        align-items: center;
-        &__input {
-            background: #229A87;
-            border: none;
-            box-sizing: border-box;
-            border-radius: 10px;
-            padding: 16px 40px;
-            outline: none;
-            transition: all 0.3s;
-            width: 350px;
-            height: 56px;
-            color: #FFF;
-            &::placeholder {
-                color: #FFFFFF;
-            }
-        }
-        &__icon {
-            position: absolute;
-            left: 13px;
-            z-index: 1;
-        }
-    }
+        
+    
    }
 </style>

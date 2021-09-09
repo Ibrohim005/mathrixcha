@@ -32,11 +32,10 @@
 </template>
 
 <style lang="scss">
- .btn{
+    .btn{
   cursor: pointer;
-  padding: 15px 30px 16px 31px;
-  width: 280px;
-  height: 50px;
+  width: 150px;
+  height: 40px;
   background: #F9ED35;
   border-radius: 10px;
   border: 1px solid #F9ED35;
@@ -54,6 +53,14 @@
   }
   &:focus{
     border: 1px solid #282929;
+  }
+  &_lg{
+    width: 174px;
+    height: 40px;
+  }
+  &_xl{
+    width: 220px;
+    height: 44px;
   }
   &_secondary{
     border: 1px solid #229A87;
@@ -119,3 +126,4 @@
   }
 }
 </style>
+
