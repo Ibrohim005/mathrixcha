@@ -2,15 +2,15 @@
   <div class="home">
     <Header />
     <Entrance />
+    <Label />
 
 
 
     <Button />
     <Input />
 
-    <br><br><br><br><br><br><br><br><br>
+
     
-    <Label />
 
     </div>
 </template>
