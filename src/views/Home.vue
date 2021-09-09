@@ -7,9 +7,6 @@
 
     <Button />
     <Input />
-
-    <br><br><br><br><br><br><br><br><br>
-    
     <Label />
 
     </div>
