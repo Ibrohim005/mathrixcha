@@ -1,6 +1,6 @@
 <template>
     <div class="buttons">
-<!--    <button class="btn cursor-pointer ">normal</button>
+<!--      
         <button class="btn btn_secondary">awoi</button>
         <button class="btn btn_revice">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +27,8 @@
                 </defs>
             </svg>
             checked
-        </button> -->
+        </button>
+-->
     </div>
 </template>
 
