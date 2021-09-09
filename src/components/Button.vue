@@ -33,7 +33,7 @@
 </template>
 
 <style lang="scss">
-    .btn{
+  .btn{
   cursor: pointer;
   width: 148px;
   height: 38px;

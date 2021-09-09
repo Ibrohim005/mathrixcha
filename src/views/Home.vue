@@ -14,7 +14,11 @@
 
     </div>
 </template>
-
+<style lang="scss">
+img{
+  pointer-events: none;
+}
+</style>
 <script>
 import Header from '../components/Header.vue'
 import Button from '../components/Button.vue'
