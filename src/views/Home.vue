@@ -2,20 +2,18 @@
   <div class="home">
     <Header />
     <Entrance />
-    <Label />
-
-
 
     <Button />
     <Input />
+    <Label />
 
-
-    
+    <Learning />
 
     </div>
 </template>
 <style lang="scss">
-img{
+
+img {
   pointer-events: none;
 }
 </style>
@@ -25,11 +23,13 @@ import Button from '../components/Button.vue'
 import Input from '../components/Input.vue'
 import Entrance from '../components/Entrance.vue'
 import Label from '../components/Label.vue'
+import Learning from '../components/Learning.vue'
+
 
 export default {
   name: "Home",
   components: {
-    Header, Button, Input, Entrance, Label
+    Header, Button, Input, Entrance, Label, Learning
   },
 };
 </script>

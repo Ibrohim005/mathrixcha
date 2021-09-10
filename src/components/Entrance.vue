@@ -1,5 +1,11 @@
 <template>
     <div class="entrance right-8">
+        <div class="section-label bg-blue flex items-center justify-between rounded-r-full p-5">
+            <img src="../assets/img/label-img.png" alt="">
+            <p class="section-label__text">
+                Adapted to reforms
+            </p>
+        </div>  
         <div class="lg:container relative mx-auto">
             <img class="entrance__img absolute" src="../assets/img/entrance-img.png" alt="Entrance img">
             <svg class="entrance__icon" width="140" height="133" viewBox="0 0 140 133" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +30,7 @@
 .entrance{
     padding: 34px 0 76px;
     &__img{
-        right: -85px;
+        right: 0;
         top: 4px;
     }
     .title{
