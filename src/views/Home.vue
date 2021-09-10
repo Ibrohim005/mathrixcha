@@ -2,6 +2,7 @@
   <div class="home">
     <Header />
     <Entrance />
+    <Footer />
 
 
 
@@ -22,11 +23,12 @@ import Button from '../components/Button.vue'
 import Input from '../components/Input.vue'
 import Entrance from '../components/Entrance.vue'
 import Label from '../components/Label.vue'
+import Footer from '../components/Footer.vue'
 
 export default {
   name: "Home",
   components: {
-    Header, Button, Input, Entrance, Label
+    Header, Button, Input, Entrance, Label, Footer
   },
 };
 </script>
