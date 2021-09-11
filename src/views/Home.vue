@@ -11,6 +11,7 @@
 
     <Learning />
     <Works :works="worksBoxes" :img="worksBoxes.img" :title="worksBoxes.title"/>
+    <Join />
     <Footer />
 
     </div>
@@ -36,12 +37,13 @@ import Label from '../components/Label.vue'
 import Learning from '../components/Learning.vue'
 import Footer from '../components/Footer.vue'
 import Works from '../components/Works'
+import Join from '../components/Join'
 
 
 export default {
   name: "Home",
   components: {
-    Header, Button, Input, Entrance, Label, Learning, Footer, Works
+    Header, Button, Input, Entrance, Label, Learning, Footer, Works, Join
     
   },
   data() {
