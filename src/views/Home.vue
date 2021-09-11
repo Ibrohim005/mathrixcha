@@ -12,22 +12,15 @@
     <Learning />
     <Works :works="worksBoxes" :img="worksBoxes.img" :title="worksBoxes.title"/>
     <Join />
+    <Slider />
     <Media />
     <Footer />
 
+    <Modal />
+
     </div>
 </template>
-<style lang="scss">
 
-img {
-  pointer-events: none;
-}
-
-.section-title {
-  color: #0F947F;
-}
-
-</style>
 
 <script>
 import Header from '../components/Header.vue'
@@ -37,15 +30,16 @@ import Entrance from '../components/Entrance.vue'
 import Label from '../components/Label.vue'
 import Learning from '../components/Learning.vue'
 import Footer from '../components/Footer.vue'
-import Works from '../components/Works'
-import Join from '../components/Join'
-import Media from '../components/media'
-
+import Works from '../components/Works.vue'
+import Join from '../components/Join.vue'
+import Media from '../components/Media'
+import Slider from '../components/Slider.vue'
+import Modal from '../components/Modal.vue'
 
 export default {
   name: "Home",
   components: {
-    Header, Button, Input, Entrance, Label, Learning, Footer, Works, Join, Media
+    Header, Button, Input, Entrance, Label, Learning, Footer, Works, Join, Media, Slider, Modal
   },
   data() {
     return {
@@ -67,3 +61,20 @@ export default {
   }
 };
 </script>
+
+
+<style lang="scss">
+
+button:hover {
+  transform: translate(2px, -2px);
+}
+
+img {
+  pointer-events: none;
+}
+
+.section-title {
+  color: #0F947F;
+}
+
+</style>

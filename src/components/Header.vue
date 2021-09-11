@@ -1,6 +1,6 @@
 <template>
     <div class="header py-4">
-        <img src="../assets/img/1-screen.png" alt="" class="header__img">
+        <img src="../assets/img/1-screen.png" alt="" class="header__img cursor-pointer ">
         <div class="container mx-auto flex items-center justify-between">
             <div class="logo">
                 <svg width="160" height="39" viewBox="0 0 160 39" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -75,13 +75,17 @@
                     </div>
                     <input class="search__input" type="text" placeholder="Find what interests you">
                 </div>
-                <select class="select select_sm select_sm mx-3 px-5 hidden sm:block">
-                    <option value="5th">5th</option> 
-                    <option value="4th">4th</option>
-                    <option value="terminal es">Terminal ES</option>
-                    <option selected value="terminal s">Terminal S</option>
-                    <option value="second">Second</option>
+                <div class="relative">
+                    <select class="select select_sm select_sm mx-3 px-5 hidden sm:block">
+                        <option value="5th">5th</option> 
+                        <option value="4th">4th</option>
+                        <option value="terminal es">Terminal ES</option>
+                        <option selected value="terminal s">Terminal S</option>
+                        <option value="second">Second</option>
                 </select>
+                <svg class="select-icon absolute top-3 right-7 w-4 h-4" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.32116 8.90437C6.92335 9.47678 6.07665 9.47678 5.67884 8.90437L1.09641 2.31075C0.635584 1.64768 1.11009 0.740063 1.91757 0.740064L11.0824 0.740064C11.8899 0.740064 12.3644 1.64768 11.9036 2.31076L7.32116 8.90437Z" fill="#282929"/></svg>
+                </div>
+                
                 <button class="btn  btn_secondary hidden md:block">Log In</button>
                 <button class="btn  btn_lg md:ml-3">Registration</button>
             </div>
@@ -105,5 +109,9 @@ export default {
             width: 100%;
             height: 530px;
         }
+   }
+
+   .select {
+        appearance: none;   
    }
 </style>
