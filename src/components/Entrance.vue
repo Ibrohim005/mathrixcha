@@ -18,8 +18,8 @@
                     We’re a nonprofit with the mission to provide a free, world-class <br> education for anyone, anywhere.
                 </p>
                 <div class="entrance-btns">
-                    <button class="btn">Student</button>
-                    <button class="btn mx-5">Parent</button>
+                    <button class="btn mb-5 sm:mb-0">Student</button>
+                    <button class="btn mx-5 mb-5 sm:mb-0">Parent</button>
                     <button class="btn">Teacher</button>
                 </div>
             </div>
