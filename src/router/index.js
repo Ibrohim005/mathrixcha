@@ -1,6 +1,13 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import Modal from "../components/Modal"
+import Reg1 from "../components/Reg1"
+import Reg2 from "../components/Reg2"
+import Reg3 from "../components/Reg3"
+
+
+
 
 Vue.use(VueRouter);
 
@@ -10,6 +17,31 @@ const routes = [
     name: "Home",
     component: Home,
   },
+  {
+    path: "/Modal",
+    name: "Modal",
+    component: Modal,
+  },
+  {
+    path: "/Register1",
+    name: "Reg1",
+    component: Reg1,
+  },
+  {
+    path: "/Register2",
+    name: "Reg2",
+    component: Reg2,
+  },
+  {
+    path: "/Register3",
+    name: "Reg3",
+    component: Reg3,
+  },
+
+  
+
+  
+  
   // {
   //   path: "/about",
   //   name: "About",

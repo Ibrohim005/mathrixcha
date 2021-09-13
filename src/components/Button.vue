@@ -34,20 +34,32 @@
 
 <style lang="scss">
   .btn{
-  cursor: pointer;
-  width: 148px;
-  height: 38px;
-  background: #F9ED35;
-  border-radius: 10px;
-  border: 1px solid #F9ED35;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: -0.0142658px;
-  color: #282929;
-  transition: all 0.3s;
+      cursor: pointer;
+      width: 148px;
+      height: 38px;
+      background: #F9ED35;
+      border-radius: 10px;
+      border: 1px solid #F9ED35;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: -0.0142658px;
+      color: #282929;
+      transition: all 0.3s;
+  &_dark_blue {
+      background-color: #3B5999 ;
+      color: #FFF;
+      border: none;
+    }
+
+  &_light_blue {
+      background-color: #4285F4 ;
+      color: #FFF;
+      border: none;
+    }
+
   &:hover{
     background: #F4DC00;
     border: 1px solid #F4DC00;

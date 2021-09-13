@@ -16,10 +16,13 @@
     <Media />
     <Footer />
 
-    <Modal />
+ 
+
+    <Reg-1 />
 
     </div>
 </template>
+
 
 
 <script>
@@ -34,12 +37,13 @@ import Works from '../components/Works.vue'
 import Join from '../components/Join.vue'
 import Media from '../components/Media'
 import Slider from '../components/Slider.vue'
-import Modal from '../components/Modal.vue'
+
+import Reg1 from '../components/Reg1.vue'
 
 export default {
   name: "Home",
   components: {
-    Header, Button, Input, Entrance, Label, Learning, Footer, Works, Join, Media, Slider, Modal
+    Header, Button, Input, Entrance, Label, Learning, Footer, Works, Join, Media, Slider,  Reg1
   },
   data() {
     return {
@@ -56,6 +60,48 @@ export default {
           img: require('@/assets/img/boxes/3.png'),
           title: 'We prepare you to the exam'
         }
+      ],
+      subjects: [
+        {
+          img:require('@/assets/img/subjects/1.png'),
+          title: 'Mathematics'
+        },
+        {
+          img:require('@/assets/img/subjects/2.png'),
+          title: 'Physical'
+        },
+        {
+          img:require('@/assets/img/subjects/3.png'),
+          title: 'SVT'
+        },
+        {
+          img:require('@/assets/img/subjects/4.png'),
+          title: 'History'
+        },
+        {
+          img:require('@/assets/img/subjects/5.png'),
+          title: 'Chemistry'
+        },
+        {
+          img:require('@/assets/img/subjects/6.png'),
+          title: 'Numeric Science'
+        },
+        {
+          img:require('@/assets/img/subjects/7.png'),
+          title: 'Technology'
+        },
+        {
+          img:require('@/assets/img/subjects/8.png'),
+          title: 'Philosophy'
+        },
+        {
+          img:require('@/assets/img/subjects/9.png'),
+          title: 'Geographi'
+        },
+        {
+          img:require('@/assets/img/subjects/10.png'),
+          title: 'French'
+        },
       ]
     }
   }
