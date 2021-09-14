@@ -5,6 +5,10 @@ import Modal from "../components/Modal"
 import Reg1 from "../components/Reg1"
 import Reg2 from "../components/Reg2"
 import Reg3 from "../components/Reg3"
+import Teachers from "../components/Teachers"
+import Header from "../components/Header"
+import HeaderSmall from "../components/HeaderSmall"
+
 
 
 
@@ -37,6 +41,22 @@ const routes = [
     name: "Reg3",
     component: Reg3,
   },
+  {
+    path: "/Teachers",
+    name: "Teachers",
+    component: Teachers,
+  },
+  {
+    path: "/HeaderSmall",
+    name: "HeaderSmall",
+    component: HeaderSmall,
+  },
+  {
+    path: "/Header",
+    name: "Header",
+    component: Header,
+  },
+
 
   
 

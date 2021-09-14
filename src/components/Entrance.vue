@@ -20,7 +20,9 @@
                 <div class="entrance-btns">
                     <button class="btn mb-5 sm:mb-0">Student</button>
                     <button class="btn mx-5 mb-5 sm:mb-0">Parent</button>
+                    <router-link to="/teachers">
                     <button class="btn">Teacher</button>
+                    </router-link>
                 </div>
             </div>
             <img class="entrance__img mt-10 xl:-mt-20" src="../assets/img/entrance-img.png" alt="Entrance img">

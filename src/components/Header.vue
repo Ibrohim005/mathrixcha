@@ -87,6 +87,7 @@
                 </div>
                 
                 <button class="btn  btn_secondary hidden md:block">Log In</button>
+                
                 <router-link to="Modal">
                 <button class="btn  btn_lg md:ml-3">Registration</button>
                 </router-link>
@@ -101,7 +102,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .header{
         border-bottom: 2px solid rgba($color: #fff, $alpha: 0.2);
         &__img{
@@ -115,5 +116,15 @@ export default {
 
    .select {
         appearance: none;   
+   }
+
+  
+</style>
+
+<style lang="scss">
+     @media (max-width: 640px) {
+       .select-icon {
+           display: none;
+       }
    }
 </style>
