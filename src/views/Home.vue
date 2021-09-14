@@ -16,10 +16,6 @@
     <Media />
     <Footer />
 
- 
-
-    <Reg-1 />
-
     </div>
 </template>
 
