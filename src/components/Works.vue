@@ -1,7 +1,7 @@
 <template>
   <div class="works relative mb-20">
     <img class="back-img w-full -z-10 absolute top-0" src="../assets/img/bg.png" alt="">
-    <div class="lg:container mx-auto flex items-center flex-col justify-center items-center py-6 ">
+    <div class="lg:container mx-auto px-3 flex items-center flex-col justify-center items-center py-6 ">
       <div class="works__icon">
         <svg width="112" height="102" viewBox="0 0 112 102" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd"
