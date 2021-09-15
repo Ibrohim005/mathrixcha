@@ -91,7 +91,7 @@
       background: #EDFAF6;
       border-radius: 20px;
       .item{
-        
+        background: center;
       }
     }
 </style>
