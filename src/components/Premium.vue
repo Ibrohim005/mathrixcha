@@ -44,7 +44,14 @@
         </div>
     </div>
 
-    
+    <!-- plans -->
+    <div class="plans flex items-center justify-center">
+      <div class="year-plan">
+        <div class="plan-header">
+
+        </div>
+      </div>
+    </div>
 
   </div>
 </template>
@@ -84,7 +91,7 @@
       background: #EDFAF6;
       border-radius: 20px;
       .item{
-
+        
       }
     }
 </style>
