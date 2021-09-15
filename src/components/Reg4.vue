@@ -1,6 +1,6 @@
 <template>
   <div class="reg4 relative text-center">
-    <div class="lg:container mx-auto px-3">
+    <div class="lg:container mx-auto px-5">
       <!-- bg-image -->
       <img class="absolute top-0 left-0 w-full -z-1" src="../assets/img/register/Registration_bg.png" alt="">
       <!-- header -->

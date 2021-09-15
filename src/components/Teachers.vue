@@ -2,7 +2,7 @@
   <div>
   <HeaderSmall />
     <div class="teachers relative">
-      <div class="lg:container mx-auto px-3">
+      <div class="lg:container mx-auto px-5">
         <div class="text-left flex items-center justify-left mt-9">
 
           <router-link to="/">

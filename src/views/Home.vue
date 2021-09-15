@@ -4,7 +4,6 @@
     <Entrance />
 
     <Button />
-    <Input />
     <Label />
 
 
@@ -16,6 +15,7 @@
     <Media />
     <Footer />
 
+    <Input />
     </div>
 </template>
 
