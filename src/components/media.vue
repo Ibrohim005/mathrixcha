@@ -1,7 +1,7 @@
 <template>
     <div class="media relative pt-6 pb-24">
         <img class="media__bg-img absolute top-0 -z-1 h-full w-full" src="../assets/img/media-bg.png" alt="">
-        <div class="lg:container mx-auto px-3">
+        <div class="lg:container mx-auto px-5">
             <div class="works__icon">
                 <svg class="mx-auto" width="112" height="102" viewBox="0 0 112 102" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -32,7 +32,7 @@
             </div>
             <h4 class="-mt-9 works__title section-title text-center font-semibold font-size-xl mb-20">Why Mathrix works</h4>
             <div class="media-videos flex flex-wrap text-center justify-around">
-                <div class="media-video mt-2">
+                <div class="media-video">
                     <video width="368px" height="228px" controls  class="rounded-xl">
                         <source src="../assets/video/video_2021-03-05_19-12-47.mp4" type="video/mp4">
                     </video>
@@ -67,7 +67,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
     @media screen and (max-width: 1187px) {
    .media__bg-img {
        display: none ;
