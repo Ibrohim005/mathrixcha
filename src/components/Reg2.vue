@@ -1,8 +1,8 @@
 <template>
-  <div class="lg:container mx-auto">
-    <div class="reg1 relative text-center">
+  <div class="reg2 relative text-center">
+    <div class="lg:container mx-auto">
       <!-- bg-image -->
-      <img class="absolute top-0 w-full -z-1" src="../assets/img/register/Registration_bg.png" alt="">
+      <img class="absolute top-0 left-0 w-full -z-1" src="../assets/img/register/Registration_bg.png" alt="">
       <!-- header -->
       <div class="header flex justify-around items-center pt-5">
         <!-- back-button -->
@@ -115,7 +115,7 @@
 </script>
 
 <style lang="scss" scoped>
-  .reg1 {
+  .reg2 {
     height: 100vh;
 
     .progress-text {

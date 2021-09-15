@@ -107,9 +107,6 @@ export default {
 
 <style lang="scss">
 
-button:hover {
-  transform: translate(2px, -2px);
-}
 
 img {
   pointer-events: none;

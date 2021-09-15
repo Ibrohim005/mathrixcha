@@ -1,8 +1,9 @@
+
 <template>
-  <div class="lg:container mx-auto">
-    <div class="reg1 relative text-center">
+    <div class="reg3 relative text-center">
+      <div class="lg:container mx-auto">
       <!-- bg-image -->
-      <img class="absolute top-0 w-full -z-1" src="../assets/img/register/Registration_bg.png" alt="">
+      <img class="absolute top-0 left-0 w-full -z-1" src="../assets/img/register/Registration_bg.png" alt="">
       <!-- header -->
       <div class="header flex justify-around items-center pt-5">
         <!-- back-button -->
@@ -45,12 +46,12 @@
       </div>
 
       <div class="subjects mx-auto  mt-14">
-        <div class="text-left">
+        <div class="">
           <h4 class="section__title text-left">Choose the Subject</h4>
         </div>
-        <div class="flex flex-wrap justify-between">
-          <div class="subject flex justify-center items-center" v-for="(subject,index) in subjects" :key="index" :subjects="subjects" :img="subjects.img" :title="subjects.title">
-            <img class="h-8 m-auto" :src="subject.img" alt="">
+        <div class="flex flex-wrap justify-left">
+          <div class="subject text-center rounded flex flex-col justify-around items-center pb-5 pt-2 mr-6 mt-6 cursor-pointer" v-for="(subject,index) in subjects" :key="index">
+            <img class="mx-auto w-36" :src="subject.img" alt="">
             <p style="letter-spacing: -0.149625px;" class="mt-3 text-base font-semibold">{{ subject.title }}</p>
           </div>  
         </div>
@@ -59,7 +60,7 @@
 
 
       <!-- button -->
-      <router-link to="">
+      <router-link to="register4">
         <button class="btn btn_xl mt-28  mb-4">Next</button>
       </router-link>
 
@@ -67,17 +68,62 @@
   </div>
 </template>
 
+
 <script>
   export default {
-    name: 'Reg1',
-    props: [
-      'subjects'
-    ],
+    name: 'Reg3',
+    
+    data() {
+      return{
+        subjects: [
+        {
+          img:require('@/assets/img/subjects/1.png'),
+          title: 'Mathematics'
+        },
+        {
+          img:require('@/assets/img/subjects/2.png'),
+          title: 'Physical'
+        },
+        {
+          img:require('@/assets/img/subjects/3.png'),
+          title: 'SVT'
+        },
+        {
+          img:require('@/assets/img/subjects/4.png'),
+          title: 'History'
+        },
+        {
+          img:require('@/assets/img/subjects/5.png'),
+          title: 'Chemistry'
+        },
+        {
+          img:require('@/assets/img/subjects/6.png'),
+          title: 'Numeric Science'
+        },
+        {
+          img:require('@/assets/img/subjects/7.png'),
+          title: 'Technology'
+        },
+        {
+          img:require('@/assets/img/subjects/8.png'),
+          title: 'Philosophy'
+        },
+        {
+          img:require('@/assets/img/subjects/9.png'),
+          title: 'Geographi'
+        },
+        {
+          img:require('@/assets/img/subjects/10.png'),
+          title: 'French'
+        },
+      ]
+      }
+    }
   }
 </script>
 
 <style lang="scss" scoped>
-  .reg1 {
+  .reg3 {
     height: 100vh;
 
     .progress-text {
@@ -95,6 +141,17 @@
     .section__title {
       color: #86C9BE;
 
+    }
+
+    .subject {
+      width: 264px;
+      box-shadow: 5px 0px 30px rgba(185, 213, 208, 0.5);
+      transition: all 0.3s;
+      border: 2px solid #FFF;
+      &:hover {
+
+        border: 2px solid #229A87;
+      }
     }
 
   }

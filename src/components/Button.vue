@@ -36,7 +36,7 @@
   .btn{
       cursor: pointer;
       width: 148px;
-      height: 38px;
+      height: 40px;
       background: #F9ED35;
       border-radius: 10px;
       border: 1px solid #F9ED35;
@@ -53,6 +53,15 @@
       color: #FFF;
       border: none;
     }
+  &_small {
+    
+    background: #FFFFFF;
+    border-radius: 6px;
+    padding : 10px;
+    height: 40px;  
+    width: 40px;
+
+  }
 
   &_light_blue {
       background-color: #4285F4 ;

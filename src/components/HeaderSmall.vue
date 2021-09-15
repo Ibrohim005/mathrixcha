@@ -2,7 +2,7 @@
     <div class="header py-4">
         <img src="../assets/img/header-small-bg.png" alt="" class="header__img cursor-pointer ">
         <div class="lg:container mx-auto flex items-center justify-between">
-            <div class="logo">
+            <router-link class="" to="/">
                 <svg width="160" height="39" viewBox="0 0 160 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M24.8182 12.6282C25.4612 6.23501 21.3897 1.93298 15.2339 0.824655C8.73765 -0.345172 -0.660051 4.21038 0.883347 13.6963C1.77629 19.1839 5.01283 19.867 8.70619 24.5673C11.0401 27.5389 11.9391 31.7459 16.1686 31.2969C21.2668 30.7566 20.5391 26.4719 22.2123 21.797C23.5498 18.0597 24.5058 15.735 24.8182 12.6282Z" fill="#F9ED35"/>
                     <path d="M21.8497 23.6308C18.8671 22.4629 11.925 22.6561 9.19141 25.6292L12.1215 29.8952L13.6555 30.9561L15.1828 31.3193L16.9372 31.092L19.3844 30.0865L20.1478 29.2095L21.2579 26.3637L21.8497 23.6308Z" fill="#E88128"/>
@@ -67,7 +67,7 @@
                     <path d="M152.896 33.9089L151.491 32.0934V33.9089H150.332V30.3287H151.521L152.846 32.0278V30.3242H154V33.9044L152.896 33.9089Z" fill="#F9ED35"/>
                     <path d="M156.078 33.9083V30.3281H158.964V31.2754H157.232V31.6289H158.929V32.5747H157.232V32.967H158.968V33.9128L156.078 33.9083Z" fill="#F9ED35"/>
                 </svg>
-            </div>
+            </router-link>
             <div class="header-right flex items-center">
                 <div class="search items-center hidden lg:flex">
                     <div class="search__icon">
@@ -85,11 +85,26 @@
                 </select>
                 <svg class="select-icon absolute top-3 right-7 w-4 h-4" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.32116 8.90437C6.92335 9.47678 6.07665 9.47678 5.67884 8.90437L1.09641 2.31075C0.635584 1.64768 1.11009 0.740063 1.91757 0.740064L11.0824 0.740064C11.8899 0.740064 12.3644 1.64768 11.9036 2.31076L7.32116 8.90437Z" fill="#282929"/></svg>
                 </div>
-                
-                <button class="btn  btn_secondary hidden md:block">Log In</button>
-                <router-link to="Modal">
-                <button class="btn  btn_lg md:ml-3">Registration</button>
+
+                <router-link to="/premium">
+                <button class="btn hidden md:block">Get Premium</button>
                 </router-link>
+
+                <router-link to="/">
+                    <button class="btn_small ml-3">
+                        <svg class="" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="10.0002" cy="3.96825" rx="4.16669" ry="3.96825" fill="#505857"/><path d="M0 18.9807C0 13.4578 4.47715 8.88892 10 8.88892C15.5228 8.88892 20 13.4578 20 18.9807C20 19.5385 19.5478 20 18.9899 20H1.0101C0.452237 20 0 19.5385 0 18.9807Z" fill="#505857"/>
+                        </svg>
+                    </button>
+                </router-link>
+
+                <router-link to="/">
+                    <button class="btn_small ml-3">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.99994 3.59713C9.99994 6.33176 7.76138 8.54862 4.99997 8.54862C4.08926 8.54862 3.23543 8.3075 2.5 7.88621V12.282C2.5 12.7311 2.12572 13.0951 1.66754 13.0951H2.08718C0.93446 13.0951 0 14.0045 0 15.1253V15.5329C0 15.9811 0.372891 16.3445 0.833912 16.3445H19.1661C19.6266 16.3445 20 15.9843 20 15.5329V15.1253C20 14.004 19.0691 13.0951 17.9128 13.0951H18.3325C17.8727 13.0951 17.5 12.7339 17.5 12.282V7.40835C17.5 3.3707 14.143 0.0975342 10 0.0975342C9.53982 0.0975342 9.08933 0.137912 8.65204 0.215234C9.48812 1.10031 9.99994 2.28953 9.99994 3.59713ZM10 20C11.6108 20 12.9167 18.7271 12.9167 17.1568H7.08333C7.08333 18.7271 8.38917 20 10 20Z" fill="#505857"/><path d="M4.72251 6.602C6.56347 6.602 8.05587 5.12409 8.05587 3.301C8.05587 1.47791 6.56347 0 4.72251 0C2.88155 0 1.38916 1.47791 1.38916 3.301C1.38916 5.12409 2.88155 6.602 4.72251 6.602Z" fill="#FF444F"/>
+                        </svg>
+
+                    </button>
+                </router-link>
+
             </div>
         </div>
     </div>

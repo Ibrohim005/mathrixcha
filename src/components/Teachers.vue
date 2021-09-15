@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="header py-4">
+    <!-- <div class="header py-4">
       <img src="../assets/img/header-small-bg.png" alt="" class="header__img cursor-pointer ">
       <div class="lg:container mx-auto flex items-center justify-between">
-        <div class="logo">
+        <router-link class="logo" to="/">
           <svg width="160" height="39" viewBox="0 0 160 39" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M24.8182 12.6282C25.4612 6.23501 21.3897 1.93298 15.2339 0.824655C8.73765 -0.345172 -0.660051 4.21038 0.883347 13.6963C1.77629 19.1839 5.01283 19.867 8.70619 24.5673C11.0401 27.5389 11.9391 31.7459 16.1686 31.2969C21.2668 30.7566 20.5391 26.4719 22.2123 21.797C23.5498 18.0597 24.5058 15.735 24.8182 12.6282Z"
@@ -153,7 +153,7 @@
               d="M156.078 33.9083V30.3281H158.964V31.2754H157.232V31.6289H158.929V32.5747H157.232V32.967H158.968V33.9128L156.078 33.9083Z"
               fill="#F9ED35" />
           </svg>
-        </div>
+        </router-link>
         <div class="header-right flex items-center">
           <div class="search items-center hidden lg:flex">
             <div class="search__icon">
@@ -188,7 +188,10 @@
           </router-link>
         </div>
       </div>
-    </div>
+    </div> -->
+
+  <HeaderSmall />
+
     <div class="teachers relative">
       <div class="lg:container mx-auto">
         <div class="text-left flex items-center justify-left mt-9">
@@ -222,25 +225,31 @@
       </div>
 
     <!---------- teacheers ---------->
-    <div class="teacher-cards z-10 flex flex-wrap justify-left">
-        <div class="teacher-card w-64 border rounded-lg text-center bg-white" v-for="(item,index) in teachers" :key="index">
+    <div class="lg:container mx-auto">
+      <div class="teacher-cards z-10 flex flex-wrap justify-center mt-16">
+        <div class="teacher-card w-64 rounded-3xl text-center mx-6 mb-12 pb-5" v-for="(item,index) in teachers" :key="index">
           <img :src="item.img" alt="teacher">
-          <div class="science-icon">
-            <img :src="item.icon" alt="icon">
+          <div class="science-icon relative mx-auto w-24 flex items-center justify-center pt-2 -mt-8">
+           <img :src="item.icon" alt="icon">
           </div>
-          <h4 class="teacher-name">{{ item.name }}</h4>
+          <h4 class="teacher-name font-bold text-base">{{ item.name }}</h4>
           <p class="teacher-science"> {{item.science }}</p>
-          <p class="about-science">{{item.about}}</p>
+          <p class="about-science font-extralight mt-1">{{item.about}}</p>
         </div>
     </div>  
+    </div>
+    
 
     </div>
-
+    <Footer />
 
   </div>
 </template>
 
 <script>
+  import Footer from "../components/Footer.vue"
+  import HeaderSmall from "../components/HeaderSmall.vue"
+
   export default {
     name: 'Teachers',
 
@@ -270,7 +279,7 @@
           {
             img: require ('@/assets/img/teachers/humans/pic (3).png'),
             icon: require('@/assets/img/teachers/icons/4.png'),
-            name: 'jared Ellis',
+            name: 'Jared Ellis',
             science: 'History',
             about: 'Management of course allocation, teaching material, curricula.',
           },
@@ -318,10 +327,24 @@
           }
         ]
       }
+    },
+    components: {
+      Footer,HeaderSmall
     }
   }
 </script>
 
 <style lang="scss" scoped>
-
+  .teacher-card  {
+    font-family: Poppins;
+    background: #FFF;
+    box-shadow: 5px 0px 30px rgba(185, 213, 208, 0.5);
+    .science-icon {
+      background: #FFF;
+      border-radius: 40px;
+    }
+    .teacher-science {
+      color: #B7C2BF;
+    }
+  }
 </style>
