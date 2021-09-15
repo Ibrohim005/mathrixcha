@@ -30,7 +30,7 @@
       </div>
     </div>
     <!-- chance -sec -->
-    <div class="chance flex flex-wrap items-center justify-between p-10 mt-9 mx-auto">
+    <div class="chance flex flex-wrap items-center justify-center lg:justify-between p-10 mt-9 mx-auto">
         <div class="chance-left">
           <div class="item flex items-center mb-7" v-for="(item,index) in items" :key="index">
             <img class="item__img" :src="item.img" alt="image" style="width: 120px;">
