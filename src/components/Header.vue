@@ -1,7 +1,7 @@
 <template>
     <div class="header py-4">
         <img src="../assets/img/1-screen.png" alt="" class="header__img cursor-pointer ">
-        <div class="lg:container mx-auto flex items-center justify-between">
+        <div class="lg:container mx-auto px-3 flex items-center justify-between">
             <div class="logo">
                 <svg width="160" height="39" viewBox="0 0 160 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M24.8182 12.6282C25.4612 6.23501 21.3897 1.93298 15.2339 0.824655C8.73765 -0.345172 -0.660051 4.21038 0.883347 13.6963C1.77629 19.1839 5.01283 19.867 8.70619 24.5673C11.0401 27.5389 11.9391 31.7459 16.1686 31.2969C21.2668 30.7566 20.5391 26.4719 22.2123 21.797C23.5498 18.0597 24.5058 15.735 24.8182 12.6282Z" fill="#F9ED35"/>

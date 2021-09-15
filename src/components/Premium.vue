@@ -4,7 +4,7 @@
     <Header-Small />
     <!-- texts -->
     <div class="relative">
-      <div class="lg:container mx-auto">
+      <div class="lg:container mx-auto px-3">
         <div class="text-left flex items-center justify-left mt-9">
 
           <router-link to="/">
@@ -90,8 +90,5 @@
       width: 1240px;
       background: #EDFAF6;
       border-radius: 20px;
-      .item{
-        
-      }
     }
 </style>

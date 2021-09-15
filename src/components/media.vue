@@ -1,7 +1,7 @@
 <template>
     <div class="media relative pt-6 pb-24">
         <img class="media__bg-img absolute top-0 -z-1 h-full w-full" src="../assets/img/media-bg.png" alt="">
-        <div class="">
+        <div class="lg:container mx-auto px-3">
             <div class="works__icon">
                 <svg class="mx-auto" width="112" height="102" viewBox="0 0 112 102" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -43,18 +43,16 @@
                 <div class="media-video mt-2 mx-10">
                     <video width="368px" height="228px" controls  class="rounded-xl">
                         <source src="../assets/video/video_2021-03-05_19-12-47.mp4" type="video/mp4">
-                        We have official professors
                     </video>
-                    <p class="media-video__text  mt-5">
+                    <p class="media-video__text mt-5">
                         We have official professors
                     </p>
                 </div>
                 <div class="media-video mt-2">
                     <video width="368px" height="228px" controls class="rounded-xl">
                         <source src="../assets/video/video_2021-03-05_19-12-47.mp4" type="video/mp4">
-                        We have official professors
                     </video>
-                    <p class="media-video__text  mt-5">
+                    <p class="media-video__text mt-5">
                         We have official professors
                     </p>
                 </div>
@@ -74,6 +72,15 @@ export default {
    .media__bg-img {
        display: none ;
     }
+}
+.media-video__text{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.149625px;
+    color: #282929;
 }
     
    
