@@ -30,18 +30,24 @@
       </div>
     </div>
     <!-- chance -sec -->
-    <div class="chance flex items-center justify-center p-14 mt-9 mx-auto">
+    <div class="chance flex items-center justify-between p-10 mt-9 mx-auto">
         <div class="chance-left">
-          <div class="item flex justify-around border items-center" v-for="(item,index) in items" :key="index">
-            <img class="item__img" :src="item.img" alt="image">
+          <div class="item flex items-center mb-7" v-for="(item,index) in items" :key="index">
+            <img class="item__img" :src="item.img" alt="image" style="width: 120px;">
             <h4 class="item__title ml-6">
               {{ item.title }}
             </h4>
           </div>
         </div>
         <div class="chance-right">
-          <video class="chance__video" src="../assets/video/premium_video.mp4" controls></video>
-          <h4 class="subtitle_video">We have official professors</h4>
+          <div class="media-video">
+            <video width="576px" height="380px" controls class="rounded-xl">
+                <source src="../assets/video/video_2021-03-05_19-12-47.mp4" type="video/mp4">
+            </video>
+            <p class="media-video__text mt-5 text-center">
+                We have official professors
+            </p>
+        </div>
         </div>
     </div>
 
@@ -152,6 +158,16 @@
       border-radius: 20px;
       .item{
         background: center;
+        &__title{
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 28px;
+          letter-spacing: -0.762769px;
+          color: #229A87;
+          max-width: 269px;
+        }
       }
     }
     .plans {
