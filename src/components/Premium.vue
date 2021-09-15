@@ -29,7 +29,7 @@
       </div>
     </div>
     <!-- chance -sec -->
-    <div class="chance flex items-center justify-between p-10 mt-9 mx-auto">
+    <div class="chance flex flex-wrap items-center justify-between p-10 mt-9 mx-auto">
         <div class="chance-left">
           <div class="item flex items-center mb-7" v-for="(item,index) in items" :key="index">
             <img class="item__img" :src="item.img" alt="image" style="width: 120px;">
@@ -53,7 +53,7 @@
     <!-- plans -->
     <div class="plans lg:container mx-auto relative px-5  flex flex-wrap items-center justify-center mb-60  mt-16">
       <!-- bg -->
-      <img class="absolute -top-80 -z-1" src="../assets/img/premium/Group 372.png" alt="">
+      <img class="absolute -top-80 -z-1 hidden lg:block" src="../assets/img/premium/Group 372.png" alt="">
       <!-- year plan -->
         
       <div class="plan relative mx-6 text-center">
@@ -84,7 +84,7 @@
       </div>
      
       <!-- monthly plan -->
-      <div class="plan bg-white mx-6 text-center">
+      <div class="plan bg-white mx-6 text-center mt-6 lg:mt-0">
         <div class="plan-top pt-4 pb-4 w-full">
          
           <h5 class="section__title section__title_white mt-1 font-semibold text-2xl">
@@ -143,7 +143,6 @@
 
 <style lang="scss" scoped>
     .chance {
-      width: 1240px;
       background: #EDFAF6;
       border-radius: 20px;
       .item{
