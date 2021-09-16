@@ -31,7 +31,7 @@ import Learning from '../components/Learning.vue'
 import Footer from '../components/Footer.vue'
 import Works from '../components/Works.vue'
 import Join from '../components/Join.vue'
-import Media from '../components/media.vue'
+import Media from '../components/Media'
 import Slider from '../components/Slider.vue'
 
 import Reg1 from '../components/Reg1.vue'
