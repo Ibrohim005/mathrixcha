@@ -164,7 +164,6 @@
   import HeaderSmall from '../components/HeaderSmall.vue'
   import Media from '../components/Media'
   import Dropdown from '../components/Dropdown'
-  import Carousel from '../components/Carousel'
  
 
   export default {
@@ -190,7 +189,7 @@
     },
     components: {
 
-      HeaderSmall, Media, Dropdown, Carousel
+      HeaderSmall, Media, Dropdown, 
     }
     }
 </script>
