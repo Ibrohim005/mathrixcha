@@ -14,7 +14,7 @@
     components: {
          VueSlickCarousel
     },
-    data() {
+    data() { 
         return {
             settings: {
                 "dots": true,

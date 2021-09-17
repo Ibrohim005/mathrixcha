@@ -114,15 +114,23 @@
       </div>
 
     </div>
-
+      
+    <!-- media -->
     <div class="mt-40">
       <Media/>
     </div>
 
+    <!-- carousel -->
+    <div class="carousel mt-15">
+      <Carousel />
+    </div>
+
+    <!-- dropdown -->
     <div class="dropdown-menu mt-16">
         <Dropdown />
     </div>
 
+    <!-- footer -->
     <div class="premium__footer mt-20 text-center pt-20">
       <div class="footer-icon w-8 mx-auto">
         <svg width="34" height="23" viewBox="0 0 34 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -156,6 +164,7 @@
   import HeaderSmall from '../components/HeaderSmall.vue'
   import Media from '../components/Media'
   import Dropdown from '../components/Dropdown'
+  import Carousel from '../components/Carousel'
  
 
   export default {
@@ -181,7 +190,7 @@
     },
     components: {
 
-      HeaderSmall, Media, Dropdown
+      HeaderSmall, Media, Dropdown, Carousel
     }
     }
 </script>
