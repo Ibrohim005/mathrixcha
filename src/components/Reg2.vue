@@ -54,7 +54,7 @@
           <h4 class="section__title text-left">Choose the grade</h4>
         </div>
 
-        <div class="flex flex-wrap mt-8 justify-between">
+        <div class="flex flex-wrap mt-8 justify-center">
           <div class="grade flex justify-center items-center text-sm font-bold rounded mb-4">
             First
           </div>
@@ -67,6 +67,7 @@
           <div class="grade flex justify-center items-center text-sm font-bold rounded mb-4">
             4th
           </div>
+          
           <div class="grade flex justify-center items-center text-sm font-bold rounded mb-4">
             5th
           </div>
@@ -85,7 +86,7 @@
 
       <!-- input  -->
 
-      <div class="grades mx-auto  mt-14">
+      <div class="mx-auto  mt-14 w-full">
         <div class="text-left">
           <h4 class="section__title text-left">Choose your college</h4>
         </div>
@@ -136,8 +137,8 @@
     }
 
     .grade {
-      width: 170px;
-      height: 70px;
+      width: 170px !important;
+      height: 70px !important;
       box-shadow: 5px 0px 18px rgba(185, 213, 208, 0.4);
       color: #505857;
       font-family: Poppins;
@@ -151,5 +152,21 @@
 
       }
     }
+  }
+
+  @media  (max-width: 900px) {
+  .reg2 {
+    width: 100%;
+    overflow: hidden !important;
+    .progress-text {
+      width: 100%;
+    }
+   }
+   .section__title {
+     font-size: 16px;
+   }
+   .grades {
+     width: 100%;
+   }
   }
 </style>

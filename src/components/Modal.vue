@@ -10,7 +10,7 @@
     text-center 
     rounded 
     place-items-center 
-    py-7 "
+    py-7"
     >
 
             <router-link to="/" @click="isHidden = !isHidden">
@@ -120,6 +120,11 @@
         width: 350px;
     }
 
+   @media (max-width: 900px) {
+  .register-modal {
+    width: 100%;
+  }
+}
    
 
 </style>

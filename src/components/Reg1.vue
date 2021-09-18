@@ -53,13 +53,25 @@
 <style lang="scss" scoped>
   .reg1 {
     height: 100vh;
-  .progress-text {
-    width: 800px;
+    .progress-text {
+      width: 800px;
+    }
+    .form {
+      width: 500px;
+    }
   }
+
+  
+ @media  (max-width: 380px) {
+  .reg1 {
+    width: 100%;
+    overflow: hidden !important;
   .form {
-    width: 500px;
+    width: 100%;
   }
+  .progress-text {
+        width: 100%;
+      }
   }
-
-
+   }
 </style>

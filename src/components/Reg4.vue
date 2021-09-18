@@ -299,5 +299,28 @@
   top: 29px;
 }
 
+ @media  (max-width: 900px) {
+  .reg4 {
+    width: 100%;
+    overflow: hidden !important;
+    .progress-text {
+      width: 100%;
+    }
+    .levels-icon-1 {
+      display: none;
+    }
+   }
+   .section__title {
+     font-size: 16px;
+   }
+   .grades {
+     width: 100%;
+   }
+   .subjects {
+     width: 100%;
+    
+   }
+  }
+
 
 </style>

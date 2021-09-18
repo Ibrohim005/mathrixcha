@@ -49,7 +49,7 @@
         <div class="">
           <h4 class="section__title text-left">Choose the Subject</h4>
         </div>
-        <div class="flex flex-wrap justify-left">
+        <div class="flex flex-wrap justify-left justify-center">
           <div class="subject text-center rounded flex flex-col justify-around items-center pb-5 pt-2 mr-6 mt-6 cursor-pointer" v-for="(subject,index) in subjects" :key="index">
             <img class="mx-auto w-36" :src="subject.img" alt="">
             <p style="letter-spacing: -0.149625px;" class="mt-3 text-base font-semibold">{{ subject.title }}</p>
@@ -154,5 +154,25 @@
       }
     }
 
+  }
+
+  @media  (max-width: 900px) {
+  .reg3 {
+    width: 100%;
+    overflow: hidden !important;
+    .progress-text {
+      width: 100%;
+    }
+   }
+   .section__title {
+     font-size: 16px;
+   }
+   .grades {
+     width: 100%;
+   }
+   .subjects {
+     width: 100%;
+    
+   }
   }
 </style>
