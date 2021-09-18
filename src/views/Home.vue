@@ -7,11 +7,10 @@
     <Label />
 
 
-
     <Learning />
     <Works :works="worksBoxes" :img="worksBoxes.img" :title="worksBoxes.title"/>
     <Join />
-    <Slider />
+
     <Media />
     <Footer />
 
@@ -32,14 +31,16 @@ import Footer from '../components/Footer.vue'
 import Works from '../components/Works.vue'
 import Join from '../components/Join.vue'
 import Media from '../components/Media'
-import Slider from '../components/Slider.vue'
+
+
+
 
 import Reg1 from '../components/Reg1.vue'
 
 export default {
   name: "Home",
   components: {
-    Header, Button, Input, Entrance, Label, Learning, Footer, Works, Join, Media, Slider,  Reg1
+    Header, Button, Input, Entrance, Label, Learning, Footer, Works, Join, Media,  Reg1, 
   },
   data() {
     return {

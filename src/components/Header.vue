@@ -88,18 +88,40 @@
                 
                 <button class="btn  btn_secondary hidden md:block">Log In</button>
                 
-                <router-link to="Modal">
-                <button class="btn  btn_lg md:ml-3">Registration</button>
+                <router-link to="">
+                <button class="btn  btn_lg md:ml-3" @click="myFilter">Registration</button>
                 </router-link>
             </div>
+        </div>
+
+        <div class="registration__modal lg:container flex absolute z-10 justify-center" v-show="isActive">
+            <div class="modal__bg"></div>
+            <Modal />
         </div>
     </div>
 </template>
 
 <script>
+import Modal from '../components/Modal'
+
 export default {
-    name: "Header"
+    name: "Header",
+    data() {
+        return {
+            isActive: false
+        }
+    },
+    methods: {
+        myFilter() {
+           this.isActive = !this.isActive 
+        }
+    },
+    components: {
+        Modal
+    }
 }
+
+
 </script>
 
 <style lang="scss" scoped>
@@ -112,7 +134,15 @@ export default {
             width: 100%;
             height: 530px;
         }
+        
    }
+
+
+
+    .modal__bg{
+        background: #282929;
+        opacity: 0.5;
+    }
 
    .select {
         appearance: none;   
