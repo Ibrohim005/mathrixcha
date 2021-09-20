@@ -1,6 +1,6 @@
 <template>
     <div class="header py-4">
-        <img src="../assets/img/1-screen.png" alt="" class="header__img cursor-pointer ">
+        <img src="../assets/img/1-screen.png" alt="" class="header__img cursor-pointer">
         <div class="lg:container mx-auto px-5 flex items-center justify-between">
             <div class="logo">
                 <svg width="160" height="39" viewBox="0 0 160 39" fill="none" xmlns="http://www.w3.org/2000/svg">
