@@ -32,7 +32,7 @@ import Learning from '../components/Learning.vue'
 import Footer from '../components/Footer.vue'
 import Works from '../components/Works.vue'
 import Join from '../components/Join.vue'
-import Media from '../components/Media'
+import Media from '../components/Media.vue'
 import Slider from '../components/Slider.vue'
 
 

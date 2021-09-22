@@ -40,7 +40,7 @@
                         We have official professors
                     </p>
                 </div>
-                <div class="media-video mt-2 mx-10">
+                <div class="media-video mt-2 mx-10 lg:mt-0">
                     <video width="368px" height="228px" controls  class="rounded-xl">
                         <source src="../assets/video/premium_video.mp4" type="video/mp4">
                     </video>
@@ -48,7 +48,7 @@
                         We have official professors
                     </p>
                 </div>
-                <div class="media-video mt-2">
+                <div class="media-video mt-2 xl:mt-0">
                     <video width="368px" height="228px" controls class="rounded-xl">
                         <source src="../assets/video/premium_video.mp4" type="video/mp4">
                     </video>
