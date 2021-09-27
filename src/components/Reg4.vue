@@ -18,7 +18,7 @@
         <!-- title -->
         <h4 class="section__title">Give us more information about yourself</h4>
         <!-- x-button -->
-        <router-link to="Modal">
+        <router-link to="/">
           <svg class="cursor-pointer" width="34" height="34" viewBox="0 0 34 34" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <circle cx="17" cy="17" r="17" fill="#DEF9F1" />

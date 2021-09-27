@@ -18,7 +18,7 @@
         <!-- title -->
         <h4 class="section__title">What grade and college are you in?</h4>
         <!-- x-button -->
-        <router-link to="Modal">
+        <router-link to="/">
           <svg class="cursor-pointer" width="34" height="34" viewBox="0 0 34 34" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <circle cx="17" cy="17" r="17" fill="#DEF9F1" />
@@ -49,7 +49,7 @@
 
       <!-- grades -->
 
-      <div class="grades mx-auto  mt-14">
+      <div class="grades mx-auto  mt-4">
         <div class="text-left">
           <h4 class="section__title text-left">Choose the grade</h4>
         </div>
@@ -86,7 +86,7 @@
 
       <!-- input  -->
 
-      <div class="mx-auto  mt-14 w-full">
+      <div class="mx-auto  mt-4 w-full">
         <div class="text-left">
           <h4 class="section__title text-left">Choose your college</h4>
         </div>
@@ -102,7 +102,7 @@
 
       <!-- button -->
       <router-link to="register3">
-        <button class="btn btn_xl mt-28  mb-4">Next</button>
+        <button class="btn btn_xl mt-20 mb-4">Next</button>
       </router-link>
 
     </div>

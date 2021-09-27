@@ -9,7 +9,7 @@
       <!-- title -->
       <h4 class="section__title">Let's get acquainted</h4>
       <!-- x-button -->
-        <router-link to="Modal">
+        <router-link to="/">
         <svg class="cursor-pointer" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="17" cy="17" r="17" fill="#DEF9F1"/><path fill-rule="evenodd" clip-rule="evenodd" d="M23.5971 10.4358C23.1166 9.95582 22.3382 9.95582 21.8577 10.4358L17.1892 15.2933L12.1105 10.3701C11.7969 10.0495 11.3337 9.92492 10.9016 10.0449C10.4695 10.1648 10.1368 10.5103 10.0333 10.9466C9.92975 11.383 10.0717 11.8411 10.4039 12.1425L15.4498 17L10.4039 21.8575C10.0717 22.1589 9.92975 22.617 10.0333 23.0534C10.1368 23.4897 10.4695 23.8352 10.9016 23.9551C11.3337 24.0751 11.7969 23.9505 12.1105 23.6299L17.1892 18.7067L21.8577 23.5643C22.159 23.8964 22.6171 24.0384 23.0534 23.9349C23.4897 23.8313 23.8352 23.4986 23.9551 23.0665C24.0751 22.6343 23.9505 22.1712 23.6299 21.8575L18.9286 16.9344L23.6299 12.0112C24.0006 11.5469 23.9868 10.8841 23.5971 10.4358V10.4358Z" fill="#229A87"/>
         </svg>
         </router-link>
@@ -37,7 +37,7 @@
 
         <!-- button -->
         <router-link to="register2">
-        <button class="btn btn_xl mt-60">Next</button>
+        <button class="btn btn_xl mt-40">Next</button>
         </router-link>
 
     </div>
@@ -46,7 +46,10 @@
 
 <script>
   export default {
-    name: 'Reg1'
+    name: 'Reg1',
+    mounted() {
+      document.body.style.overflow = 'visible'
+    }
   }
 </script>
 
