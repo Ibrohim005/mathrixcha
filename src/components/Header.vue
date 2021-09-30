@@ -86,16 +86,16 @@
                 <svg class="select-icon absolute top-3 right-7 w-4 h-4" width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.32116 8.90437C6.92335 9.47678 6.07665 9.47678 5.67884 8.90437L1.09641 2.31075C0.635584 1.64768 1.11009 0.740063 1.91757 0.740064L11.0824 0.740064C11.8899 0.740064 12.3644 1.64768 11.9036 2.31076L7.32116 8.90437Z" fill="#282929"/></svg>
                 </div>
                 
-                <button class="btn  btn_secondary hidden md:block" @click="logInModal = !logInModal">
+                <button class="btn  btn_secondary hidden md:block" @click="logInModal = !logInModal, regModal = false">
                     Log In
                 </button>
-                <button tag="button" class="btn btn_lg md:ml-3" @click="regModal = !regModal">
+                <button tag="button" class="btn btn_lg md:ml-3" @click="regModal = !regModal, logInModal = false">
                     Registration
                 </button>
             </div>
         </div>
 
-        <Modal />
+        <Modal :regModal="regModal" :logInModal="logInModal"/>
     </div>
 
 </template>
@@ -117,6 +117,9 @@ export default {
     watch: {
         logInModal: function () {
             document.body.style.overflow = this.logInModal ? 'hidden' : ''
+        },
+        regModal: function () {
+            document.body.style.overflow = this.regModal ? 'hidden' : ''
         }
     }
 }
@@ -136,21 +139,7 @@ export default {
         height: 530px;
     }
 }
-.registration__modal{
-    // width: 660px;
-    // height: 660px;
-    width: 100%;
-    height: 100vh;
-    background: #0000009e;
-}
-.register-modal {
-    padding: 44px 155px;
-    background: url('../assets/img/register/modal_window.png'), #fff;
-    background-position: center;
-    }
-    .select {
-            appearance: none;   
-    }
+
 @media (max-width: 640px) {
     .select-icon {
         display: none;
