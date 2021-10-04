@@ -55,31 +55,10 @@
         </div>
 
         <div class="flex flex-wrap mt-8 justify-center">
-          <div class="grade flex justify-center items-center text-sm font-bold rounded mb-4">
-            First
-          </div>
-          <div class="grade flex justify-center items-center text-sm font-bold rounded mb-4">
-            Second
-          </div>
-          <div class="grade flex justify-center items-center text-sm font-bold rounded mb-4">
-            3rd
-          </div>
-          <div class="grade flex justify-center items-center text-sm font-bold rounded mb-4">
-            4th
+          <div v-for="grade of grades" :key="grade.id" @click="chooseGrade($event)" class="grade flex justify-center items-center text-sm font-bold rounded mb-4 mr-4">
+            {{grade.title}}
           </div>
           
-          <div class="grade flex justify-center items-center text-sm font-bold rounded mb-4">
-            5th
-          </div>
-          <div class="grade flex justify-center items-center text-sm font-bold rounded mb-4">
-            Terminal L
-          </div>
-          <div class="grade flex justify-center items-center text-sm font-bold rounded mb-4">
-            Terminal ES
-          </div>
-          <div class="grade flex justify-center items-center text-sm font-bold rounded mb-4">
-            Terminal S
-          </div>
         </div>
       </div>
 
@@ -111,7 +90,35 @@
 
 <script>
   export default {
-    name: 'Reg1'
+    name: 'Reg1',
+    data(){
+      return {
+        grades: [
+          { title: "First" },
+          { title: "Second" },
+          { title: "3rd" },
+          { title: "4th" },
+          { title: "5th" },
+          { title: "Terminal L" },
+          { title: "Terminal L" },
+          { title: "Terminal S" }
+        ],
+      }
+    },
+    methods: {
+      chooseGrade(e) {
+        let activeItem = e.target,
+          gradeItems = document.getElementsByClassName("grade");
+
+        gradeItems.forEach(element => {
+          if (element.classList.contains("grade_green")) {
+            element.classList.remove("grade_green");
+          }
+        });
+
+        activeItem.classList.add("grade_green");
+      }
+    }
   }
 </script>
 
@@ -145,11 +152,14 @@
       line-height: 18px;
       letter-spacing: -0.762769px;
       transition: .3s all ease-in-out;
-
+      cursor: pointer;
+      &_green{
+        background-color: #229A87;
+        color: #fff;
+      }
       &:hover {
         background-color: #229A87;
         color: #fff;
-
       }
     }
   }
